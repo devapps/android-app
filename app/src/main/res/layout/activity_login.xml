@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/imageView1"
+            android:background="@drawable/login_edittext_bg"
+            android:ems="10"
+            android:maxLength="10"
+            android:hint="Mobile No."
+            android:inputType="number"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dip"
+            android:drawableRight="@android:drawable/stat_sys_phone_call"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            >
+
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_selector"
+            android:text="Login"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/editText1"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</ScrollView>
