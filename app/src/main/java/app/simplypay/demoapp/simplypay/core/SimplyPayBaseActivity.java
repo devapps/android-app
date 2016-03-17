@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import app.simplypay.demoapp.R;
 import app.simplypay.demoapp.simplypay.core.util.BaseActivityCallback;
 import app.simplypay.demoapp.utils.PrefManager;
 
