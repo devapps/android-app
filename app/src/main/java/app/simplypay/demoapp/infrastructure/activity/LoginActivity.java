@@ -14,26 +14,39 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.npci.upi.security.services.CLServices;
+
 import app.simplypay.demoapp.R;
+import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class LoginActivity extends AppCompatActivity {
+    @InjectView(R.id.et_password)
+    EditText et_password;
+    @InjectView(R.id.et_user_name)
+    EditText et_user_name;
+    @InjectView(R.id.imageView1)
     ImageView app_icon;
+
     Animation translate;
-    TextView app_name;
-    EditText mobile_number;
+    @InjectView(R.id.button1)
     Button login;
+
+
+
+    CLServices clServices;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        ButterKnife.inject(this);
         getSupportActionBar().hide();
-        app_icon=(ImageView)findViewById(R.id.imageView1);
+
         translate= AnimationUtils.loadAnimation(getApplicationContext(),
                 R.anim.translate_effect);
 
-        mobile_number=(EditText)findViewById(R.id.editText1);
-        login=(Button)findViewById(R.id.button1);
 
         Handler handler=new Handler();
         handler.postDelayed(new Runnable() {
@@ -59,17 +72,17 @@ public class LoginActivity extends AppCompatActivity {
                         //  LoginBox.setVisibility(View.VISIBLE);
                         Animation animFade = AnimationUtils.loadAnimation(LoginActivity.this, R.anim.fade_in);
                         //  LoginBox.startAnimation(animFade);
-                        mobile_number.setVisibility(View.VISIBLE);
+                        et_password.setVisibility(View.VISIBLE);
+                        et_user_name.setVisibility(View.VISIBLE);
                         login.setVisibility(View.VISIBLE);
-
-                        mobile_number.startAnimation(animFade);
+                        et_password.startAnimation(animFade);
+                        et_user_name.startAnimation(animFade);
                         login.startAnimation(animFade);
-
 
                     }
                 });
-                ImageView imgLogo = (ImageView) findViewById(R.id.imageView1);
-                imgLogo.startAnimation(animTranslate);
+
+                app_icon.startAnimation(animTranslate);
 
 
                 //app_icon.startAnimation(translate);
