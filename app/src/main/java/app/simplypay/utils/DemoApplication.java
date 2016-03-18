@@ -6,7 +6,6 @@ import android.support.multidex.MultiDex;
 
 import com.crashlytics.android.Crashlytics;
 
-import app.simplypay.demoapp.infrastructure.API.API;
 import io.fabric.sdk.android.Fabric;
 
 /**

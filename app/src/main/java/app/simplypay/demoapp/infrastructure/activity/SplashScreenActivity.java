@@ -9,17 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.crashlytics.android.Crashlytics;
 
 import app.simplypay.demoapp.R;
-import app.simplypay.demoapp.constants.Constants;
-import app.simplypay.demoapp.infrastructure.API.API;
-import app.simplypay.utils.DemoApplication;
 import io.fabric.sdk.android.Fabric;
 
 public class SplashScreenActivity extends AppCompatActivity {
