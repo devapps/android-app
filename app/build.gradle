@@ -42,6 +42,14 @@ dependencies {
         transitive = true;
     }
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.github.satyan:sugar:1.4'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.android.support:design:23.1.1'
     compile files('src/main/libs/secure-component-sdk.jar')
+
+
     compile project(':SecureComponent-release')
 }
+

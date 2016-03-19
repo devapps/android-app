@@ -1,1 +1,1 @@
-include ':app', ':SecureComponent-release'
+include ':SecureComponent-release'
