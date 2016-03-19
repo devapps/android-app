@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar,*.aar'], dir: 'src/main/libs')
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.jakewharton:butterknife:6.1.0'
     compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
@@ -48,4 +48,8 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.0.0'
     compile 'com.android.support:design:23.1.1'
     compile files('src/main/libs/secure-component-sdk.jar')
+
+
+    compile project(':SecureComponent-release')
 }
+
