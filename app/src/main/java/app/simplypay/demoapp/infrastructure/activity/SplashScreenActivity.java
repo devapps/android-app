@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.provider.SyncStateContract;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.view.ViewGroup;
 import com.crashlytics.android.Crashlytics;
 
 import app.simplypay.demoapp.R;
+import app.simplypay.demoapp.utils.Constants;
 import io.fabric.sdk.android.Fabric;
 
 public class SplashScreenActivity extends AppCompatActivity {
@@ -39,6 +41,8 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         context = SplashScreenActivity.this.getApplicationContext();
         Constants.applicationContext = getApplicationContext();
+
+
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         authenticationToken = sharedPreferences.getString(Constants.AUTHENTICATION_KEY, "NA");

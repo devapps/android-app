@@ -7,7 +7,7 @@ import retrofit.RequestInterceptor;
  * Created by jagadeeshakn on 3/16/2016.
  */
 public class ApiRequestInterceptor implements RequestInterceptor {
-    public static final String HEADER_TENANT = "X-Mifos-Platform-TenantId";
+    public static final String HEADER_TENANT = "Fineract-Platform-TenantId";
     public static final String HEADER_AUTH = "Authorization";
 
     @Override

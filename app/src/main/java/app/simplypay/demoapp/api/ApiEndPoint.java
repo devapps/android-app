@@ -8,7 +8,7 @@ import retrofit.Endpoint;
 public class ApiEndPoint implements Endpoint {
 
     public static final String API_ENDPOINT = "192.168.0.110";
-    public static final String API_PATH = "/simply_pay/api/v1";
+    public static final String API_PATH = "/fineract/api/v1";
     public static final String PROTOCOL_HTTPS = "https://";
 
     private String url;
